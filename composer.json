@@ -1,0 +1,21 @@
+{
+    "name": "meysampg/yii2-formbuilder",
+    "description": "A drag and drop form builder with jQuery for Yii2",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","form-builder","js","form"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Meysam P.G.",
+            "email": "p.g.meysam@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "meysampg\\formbuilder\\": ""
+        }
+    }
+}
