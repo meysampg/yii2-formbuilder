@@ -14,6 +14,11 @@ class FormBuilder extends Widget
     public $elementType = 'div';
 
     /**
+     * @property string language of form builder
+     */
+    public $language;
+
+    /**
      * @property array list of elements for rendering as default elements of form builder
      */
     public $data = [];
@@ -88,7 +93,7 @@ class FormBuilder extends Widget
              . "$({$this->getFBJsVariableElement()}).formBuilder({$this->getFBOptions()});\n"
              . "var {$this->accessVariableName} = $('#{$this->getFBId()}');\n";
 
-        return $str;             
+        return $str;
     }
 
     private function getFBJsVariableElement()
@@ -102,13 +107,27 @@ class FormBuilder extends Widget
             [
                 'dataType' => $this->dataType,
                 'formData' => $this->{$this->arrayToTypeFunction}($this->data),
-                'messages' => $this->messages,
+                'messages' => $this->getMessages(),
                 'showActionButtons' => $this->showActionButtons,
             ],
             $this->options
         );
 
         return json_encode($this->options);
+    }
+
+    private function getMessages()
+    {
+        $messages = [];
+
+        if ($this->language) {
+            $fileName = __DIR__ . '/messages/' . $this->language . '.php';
+            if (file_exists($fileName)) {
+                $messages = require($fileName);
+            }
+        }
+
+        return array_merge($messages, $this->messages);
     }
 
     private function arrayJsonEncode($options)
