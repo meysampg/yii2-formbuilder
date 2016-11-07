@@ -98,6 +98,12 @@
 <td></td>
 </tr>
 <tr>
+<td>language</td>
+<td>string</td>
+<td>Desired language for showing form builder (See translation section)</td>
+<td></td>
+</tr>
+<tr>
 <td>options</td>
 <td>array</td>
 <td>list of plugin options, see <a href="http://formbuilder.readthedocs.io/en/latest/">FormBuilder Documentations</a>
@@ -155,133 +161,18 @@
 
 <p><img src="https://cloud.githubusercontent.com/assets/1416085/19212220/e4f1ff50-8d59-11e6-8869-fa8d516de26b.png" alt="screen shot 2016-10-08 at 13 18 55"></p>
 
+<hr>
+
+<div class="highlight highlight-text-html-php"><pre><span class="pl-s1"><span class="pl-k">&lt;</span>?<span class="pl-k">=</span> <span class="pl-c1">FormBuilder</span><span class="pl-k">::</span>widget([</span>
+<span class="pl-s1">    <span class="pl-s"><span class="pl-pds">'</span>language<span class="pl-pds">'</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">'</span>fa-IR<span class="pl-pds">'</span></span>,</span>
+<span class="pl-s1">]); </span><span class="pl-pse"><span class="pl-s1">?</span>&gt;</span></pre></div>
+
+<p><img src="https://cloud.githubusercontent.com/assets/1416085/20057738/71b873dc-a502-11e6-9956-ef877bb13820.png" alt="formbuilder-fa"></p>
+
 <h2>
-<a id="todo" class="anchor" href="#todo" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>ToDo</h2>
+<a id="translation" class="anchor" href="#translation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Translation</h2>
 
-<ul>
-<li>Implement multilingual support with <code>language</code> property (e.g. use <code>fa-IR</code> as <code>langauge</code> code). </li>
-</ul>
-
-<h2>
-<a id="appendix" class="anchor" href="#appendix" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Appendix</h2>
-
-<h3>
-<a id="messages" class="anchor" href="#messages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Messages</h3>
-
-<p>List of all strings that can be used in <code>messages</code> property of configuration.</p>
-
-<div class="highlight highlight-text-html-php"><pre><span class="pl-s1"><span class="pl-s"><span class="pl-pds">"</span>addOption<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>Add Option<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1"><span class="pl-s"><span class="pl-pds">"</span>allFieldsRemoved<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>All fields were removed.<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1"><span class="pl-s"><span class="pl-pds">"</span>allowSelect<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>Allow Select<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1"><span class="pl-s"><span class="pl-pds">"</span>allowMultipleFiles<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>Allow users to upload multiple files<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1"><span class="pl-s"><span class="pl-pds">"</span>autocomplete<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>Autocomplete<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1"><span class="pl-s"><span class="pl-pds">"</span>button<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>Button<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1"><span class="pl-s"><span class="pl-pds">"</span>cannotBeEmpty<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>This field cannot be empty<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1"><span class="pl-s"><span class="pl-pds">"</span>checkboxGroup<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>Checkbox Group<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1"><span class="pl-s"><span class="pl-pds">"</span>checkbox<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>Checkbox<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1"><span class="pl-s"><span class="pl-pds">"</span>checkboxes<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>Checkboxes<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1"><span class="pl-s"><span class="pl-pds">"</span>className<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>Class<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1"><span class="pl-s"><span class="pl-pds">"</span>clearAllMessage<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>Are you sure you want to clear all fields?<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1"><span class="pl-s"><span class="pl-pds">"</span>clearAll<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>Clear<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1"><span class="pl-s"><span class="pl-pds">"</span>close<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>Close<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1"><span class="pl-s"><span class="pl-pds">"</span>content<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>Content<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1"><span class="pl-s"><span class="pl-pds">"</span>copy<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>Copy To Clipboard<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1"><span class="pl-s"><span class="pl-pds">"</span>copyButton<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>&amp;#43;<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1"><span class="pl-s"><span class="pl-pds">"</span>copyButtonTooltip<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>Copy<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1"><span class="pl-s"><span class="pl-pds">"</span>dateField<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>Date Field<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1"><span class="pl-s"><span class="pl-pds">"</span>description<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>Help Text<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1"><span class="pl-s"><span class="pl-pds">"</span>descriptionField<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>Description<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1"><span class="pl-s"><span class="pl-pds">"</span>devMode<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>Developer Mode<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1"><span class="pl-s"><span class="pl-pds">"</span>editNames<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>Edit Names<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1"><span class="pl-s"><span class="pl-pds">"</span>editorTitle<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>Form Elements<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1"><span class="pl-s"><span class="pl-pds">"</span>editXML<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>Edit XML<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1"><span class="pl-s"><span class="pl-pds">"</span>enableOther<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>Enable &amp;quot;Other&amp;quot;<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1"><span class="pl-s"><span class="pl-pds">"</span>enableOtherMsg<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>Let users to enter an unlisted option<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1"><span class="pl-s"><span class="pl-pds">"</span>fieldVars<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>Field Variables<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1"><span class="pl-s"><span class="pl-pds">"</span>fieldNonEditable<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>This field cannot be edited.<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1"><span class="pl-s"><span class="pl-pds">"</span>fieldRemoveWarning<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>Are you sure you want to remove this field?<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1"><span class="pl-s"><span class="pl-pds">"</span>fileUpload<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>File Upload<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1"><span class="pl-s"><span class="pl-pds">"</span>formUpdated<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>Form Updated<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1"><span class="pl-s"><span class="pl-pds">"</span>getStarted<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>Drag a field from the right to this area<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1"><span class="pl-s"><span class="pl-pds">"</span>header<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>Header<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1"><span class="pl-s"><span class="pl-pds">"</span>hide<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>Edit<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1"><span class="pl-s"><span class="pl-pds">"</span>hidden<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>Hidden Input<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1"><span class="pl-s"><span class="pl-pds">"</span>label<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>Label<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1"><span class="pl-s"><span class="pl-pds">"</span>labelEmpty<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>Field Label cannot be empty<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1"><span class="pl-s"><span class="pl-pds">"</span>limitRole<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>Limit access to one or more of the following roles:<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1"><span class="pl-s"><span class="pl-pds">"</span>mandatory<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>Mandatory<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1"><span class="pl-s"><span class="pl-pds">"</span>maxlength<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>Max Length<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1"><span class="pl-s"><span class="pl-pds">"</span>minOptionMessage<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>This field requires a minimum of 2 options<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1"><span class="pl-s"><span class="pl-pds">"</span>multipleFiles<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>Multiple Files<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1"><span class="pl-s"><span class="pl-pds">"</span>name<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>Name<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1"><span class="pl-s"><span class="pl-pds">"</span>no<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>No<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1"><span class="pl-s"><span class="pl-pds">"</span>number<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>Number<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1"><span class="pl-s"><span class="pl-pds">"</span>off<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>Off<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1"><span class="pl-s"><span class="pl-pds">"</span>on<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>On<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1"><span class="pl-s"><span class="pl-pds">"</span>option<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>Option<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1"><span class="pl-s"><span class="pl-pds">"</span>optional<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>optional<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1"><span class="pl-s"><span class="pl-pds">"</span>optionLabelPlaceholder<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>Label<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1"><span class="pl-s"><span class="pl-pds">"</span>optionValuePlaceholder<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>Value<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1"><span class="pl-s"><span class="pl-pds">"</span>optionEmpty<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>Option value required<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1"><span class="pl-s"><span class="pl-pds">"</span>other<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>Other<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1"><span class="pl-s"><span class="pl-pds">"</span>paragraph<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>Paragraph<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1"><span class="pl-s"><span class="pl-pds">"</span>placeholder<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>Placeholder<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1"><span class="pl-s"><span class="pl-pds">"</span>placeholders<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> [</span>
-<span class="pl-s1">  <span class="pl-s"><span class="pl-pds">"</span>value<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>Value<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1">  <span class="pl-s"><span class="pl-pds">"</span>label<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>Label<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1">  <span class="pl-s"><span class="pl-pds">"</span>text<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span><span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1">  <span class="pl-s"><span class="pl-pds">"</span>textarea<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span><span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1">  <span class="pl-s"><span class="pl-pds">"</span>email<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>Enter you email<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1">  <span class="pl-s"><span class="pl-pds">"</span>placeholder<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span><span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1">  <span class="pl-s"><span class="pl-pds">"</span>className<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>space separated classes<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1">  <span class="pl-s"><span class="pl-pds">"</span>password<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>Enter your password<span class="pl-pds">"</span></span></span>
-<span class="pl-s1">],</span>
-<span class="pl-s1"><span class="pl-s"><span class="pl-pds">"</span>preview<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>Preview<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1"><span class="pl-s"><span class="pl-pds">"</span>radioGroup<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>Radio Group<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1"><span class="pl-s"><span class="pl-pds">"</span>radio<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>Radio<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1"><span class="pl-s"><span class="pl-pds">"</span>removeMessage<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>Remove Element<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1"><span class="pl-s"><span class="pl-pds">"</span>remove<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>&amp;#215;<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1"><span class="pl-s"><span class="pl-pds">"</span>required<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>Required<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1"><span class="pl-s"><span class="pl-pds">"</span>richText<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>Rich Text Editor<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1"><span class="pl-s"><span class="pl-pds">"</span>roles<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>Access<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1"><span class="pl-s"><span class="pl-pds">"</span>save<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>Save<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1"><span class="pl-s"><span class="pl-pds">"</span>selectOptions<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>Options<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1"><span class="pl-s"><span class="pl-pds">"</span>select<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>Select<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1"><span class="pl-s"><span class="pl-pds">"</span>selectColor<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>Select Color<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1"><span class="pl-s"><span class="pl-pds">"</span>selectionsMessage<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>Allow Multiple Selections<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1"><span class="pl-s"><span class="pl-pds">"</span>size<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>Size<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1"><span class="pl-s"><span class="pl-pds">"</span>sizes<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> [</span>
-<span class="pl-s1">  <span class="pl-s"><span class="pl-pds">"</span>xs<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>Extra Small<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1">  <span class="pl-s"><span class="pl-pds">"</span>sm<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>Small<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1">  <span class="pl-s"><span class="pl-pds">"</span>m<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>Default<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1">  <span class="pl-s"><span class="pl-pds">"</span>lg<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>Large<span class="pl-pds">"</span></span></span>
-<span class="pl-s1">],</span>
-<span class="pl-s1"><span class="pl-s"><span class="pl-pds">"</span>style<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>Style<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1"><span class="pl-s"><span class="pl-pds">"</span>styles<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> [</span>
-<span class="pl-s1">  <span class="pl-s"><span class="pl-pds">"</span>btn<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> [</span>
-<span class="pl-s1">    <span class="pl-s"><span class="pl-pds">"</span>default<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>Default<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1">    <span class="pl-s"><span class="pl-pds">"</span>danger<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>Danger<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1">    <span class="pl-s"><span class="pl-pds">"</span>info<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>Info<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1">    <span class="pl-s"><span class="pl-pds">"</span>primary<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>Primary<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1">    <span class="pl-s"><span class="pl-pds">"</span>success<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>Success<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1">    <span class="pl-s"><span class="pl-pds">"</span>warning<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>Warning<span class="pl-pds">"</span></span></span>
-<span class="pl-s1">  ]</span>
-<span class="pl-s1">],</span>
-<span class="pl-s1"><span class="pl-s"><span class="pl-pds">"</span>subtype<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>Type<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1"><span class="pl-s"><span class="pl-pds">"</span>subtypes<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> [</span>
-<span class="pl-s1">  <span class="pl-s"><span class="pl-pds">"</span>text<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> [<span class="pl-s"><span class="pl-pds">'</span>text<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>password<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>email<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>color<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>tel<span class="pl-pds">'</span></span>],</span>
-<span class="pl-s1">  <span class="pl-s"><span class="pl-pds">"</span>button<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> [<span class="pl-s"><span class="pl-pds">'</span>button<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>submit<span class="pl-pds">'</span></span>],</span>
-<span class="pl-s1">  <span class="pl-s"><span class="pl-pds">"</span>header<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> [<span class="pl-s"><span class="pl-pds">'</span>h1<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>h2<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>h3<span class="pl-pds">'</span></span>],</span>
-<span class="pl-s1">  <span class="pl-s"><span class="pl-pds">"</span>paragraph<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> [<span class="pl-s"><span class="pl-pds">'</span>p<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>address<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>blockquote<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>canvas<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>output<span class="pl-pds">'</span></span>]</span>
-<span class="pl-s1">],</span>
-<span class="pl-s1"><span class="pl-s"><span class="pl-pds">"</span>text<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>Text Field<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1"><span class="pl-s"><span class="pl-pds">"</span>textArea<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>Text Area<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1"><span class="pl-s"><span class="pl-pds">"</span>toggle<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>Toggle<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1"><span class="pl-s"><span class="pl-pds">"</span>warning<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>Warning!<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1"><span class="pl-s"><span class="pl-pds">"</span>value<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>Value<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1"><span class="pl-s"><span class="pl-pds">"</span>viewJSON<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>{  }<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1"><span class="pl-s"><span class="pl-pds">"</span>viewXML<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>&amp;lt;/&amp;gt;<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1"><span class="pl-s"><span class="pl-pds">"</span>yes<span class="pl-pds">"</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>Yes'</span></span></pre></div>
+<p>Simply copy <code>en.php</code> file in <code>messages</code> folder and rename it to your language (e.g. <code>ar</code>, <code>fr</code>, ...), translate strings, commit your changes and send a pull request.</p>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/meysampg/yii2-formbuilder">Yii2 Formbuilder</a> is maintained by <a href="https://github.com/meysampg">meysampg</a>.</span>
