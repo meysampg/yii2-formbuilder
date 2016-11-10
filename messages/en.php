@@ -41,7 +41,9 @@ return [
     "labelEmpty" => "Field Label cannot be empty",
     "limitRole" => "Limit access to one or more of the following roles:",
     "mandatory" => "Mandatory",
+    "max" => "Maximum",
     "maxlength" => "Max Length",
+    "min" => "Minimum",
     "minOptionMessage" => "This field requires a minimum of 2 options",
     "multipleFiles" => "Multiple Files",
     "name" => "Name",
@@ -87,6 +89,7 @@ return [
         "m" => "Default",
         "lg" => "Large"
     ],
+    "step" => "Step",
     "style" => "Style",
     "styles" => [
         "btn" => [
