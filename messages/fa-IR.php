@@ -74,7 +74,7 @@ return [
     "radio" => "رادیو",
     "removeMessage" => "حذف المان",
     "remove" => "&#215;",
-    "required" => "ضروری‍ ",
+    "required" => "ضروری",
     "richText" => "ویرایشگر توانا",
     "roles" => "دسترسی",
     "save" => "ذخیره",
