@@ -76,7 +76,7 @@ class FormBuilder extends Widget
     }
 
     /**
-     * @return string unique id of form builder 
+     * @return string unique id of form builder
      */
     public function getFBId()
     {
@@ -90,8 +90,7 @@ class FormBuilder extends Widget
     {
 
         $str = "var {$this->getFBJsVariableElement()} = $('#{$this->getFBId()}');\n"
-             . "$({$this->getFBJsVariableElement()}).formBuilder({$this->getFBOptions()});\n"
-             . "var {$this->accessVariableName} = $('#{$this->getFBId()}');\n";
+             . "var {$this->accessVariableName} = $({$this->getFBJsVariableElement()}).formBuilder({$this->getFBOptions()});\n";
 
         return $str;
     }
@@ -165,7 +164,7 @@ class FormBuilder extends Widget
                     }
 
                     if (strlen($attributes)) {
-                        $xmlString .= "</$tag>";   
+                        $xmlString .= "</$tag>";
                     }
                 }
             }
