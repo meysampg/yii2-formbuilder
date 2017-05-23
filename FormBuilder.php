@@ -106,7 +106,12 @@ class FormBuilder extends Widget
             [
                 'dataType' => $this->dataType,
                 'formData' => $this->{$this->arrayToTypeFunction}($this->data),
-                'messages' => $this->getMessages(),
+                'i18n' => [
+                    'locale' => $this->language ? $this->language : 'en-US',
+                    'preloaded' => [
+                        $this->getLanguage() => $this->getMessages()
+                    ],
+                ],
                 'showActionButtons' => $this->showActionButtons,
             ],
             $this->options
@@ -127,6 +132,11 @@ class FormBuilder extends Widget
         }
 
         return array_merge($messages, $this->messages);
+    }
+
+    private function getLanguage()
+    {
+        return $this->language ? $this->language : 'en-US';
     }
 
     private function arrayJsonEncode($options)
