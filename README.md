@@ -106,4 +106,4 @@ Examples
 Translation
 -----------
 
-Simply copy `en.php` file in `messages` folder and rename it to your language (e.g. `ar`, 'fr', ...), translate strings, commit your changes and send a pull request.
+Simply copy `en.php` file in `messages` folder and rename it to your language (e.g. `ar`, `fr`, `fa`, `fa-IR` ...), translate strings, commit your changes and send a pull request.
