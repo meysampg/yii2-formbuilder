@@ -11,9 +11,6 @@ class FormBuilderAsset extends AssetBundle
 
     public function init()
     {
-        // Add css file based on app environment
-        $this->css[] = YII_DEBUG ? 'form-builder.css' : 'form-builder.min.css';
-
         // Add js file based on app environment
         $this->js[] = YII_DEBUG ? 'form-builder.js' : 'form-builder.min.js';
         $this->js[] = YII_DEBUG ? 'form-render.js' : 'form-render.min.js';
