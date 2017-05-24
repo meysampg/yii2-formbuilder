@@ -106,16 +106,19 @@ class FormBuilder extends Widget
             [
                 'dataType' => $this->dataType,
                 'formData' => $this->{$this->arrayToTypeFunction}($this->data),
-                'i18n' => [
-                    'locale' => $this->language ? $this->language : 'en-US',
-                    'preloaded' => [
-                        $this->getLanguage() => $this->getMessages()
-                    ],
-                ],
                 'showActionButtons' => $this->showActionButtons,
             ],
             $this->options
         );
+
+        if ($this->language) {
+            $this->options['i18n'] = [
+                'locale' => $this->language,
+                'preloaded' => [
+                    $this->language => $this->getMessages()
+                ],
+            ];
+        }
 
         return json_encode($this->options);
     }
