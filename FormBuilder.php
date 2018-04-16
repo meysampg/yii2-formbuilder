@@ -60,7 +60,7 @@ class FormBuilder extends Widget
 
         if ($this->dataType == 'json') {
             $this->arrayToTypeFunction = 'arrayJsonEncode';
-        } else if ($this->dataType == 'xml') {
+        } elseif ($this->dataType == 'xml') {
             $this->arrayToTypeFunction = 'arrayXmlEncode';
         } else {
             throw new InvalidConfigException('Property $dataType must be "xml" or "json".');
@@ -88,7 +88,6 @@ class FormBuilder extends Widget
      */
     private function getFBJs()
     {
-
         $str = "var {$this->getFBJsVariableElement()} = $('#{$this->getFBId()}');\n"
              . "var {$this->accessVariableName} = $({$this->getFBJsVariableElement()}).formBuilder({$this->getFBOptions()});\n";
 
