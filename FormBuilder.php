@@ -51,6 +51,10 @@ class FormBuilder extends Widget
     private $view;
 
     private $arrayToTypeFunction;
+	
+	public $model;
+	
+	public $attribute;
 
     public function init()
     {
