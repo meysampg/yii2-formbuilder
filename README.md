@@ -1,5 +1,7 @@
 Yii2 Form Builder
 =================
+🟥⚠️ _THIS PACKAGE IS ABANDONED. PLEASE SELECT ANOTHER PACKAGE OR FORK THIS REPOSITORY AND INFORM ME ON p.g.meysam [at] Gmail [dot] com TO REFER TO YOUR PACKAGE IN PACKAGIST_ ⚠️🟥
+
 A drag and drop form builder with jQuery for Yii2 which built upon to [jQuery FormBuilder](https://github.com/kevinchappell/formBuilder) plugin.
 
 Installation
